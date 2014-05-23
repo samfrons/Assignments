@@ -1,0 +1,50 @@
+
+
+.navbar {
+	position: fixed;
+
+}
+.navbar ul li a {
+
+	top: 5px;
+
+	margin: 0 2px 0 2px;
+	height: 30px;
+	width: 500px;
+}
+
+.navbar ul li {
+	display: inline-block;
+}
+
+/* there is one current_page on each html page, does this work? */
+#current_page {
+
+}
+
+.header {
+	background-color: grey;
+	height: 300px;
+}
+
+.main {
+	height: 400px;
+	background-color: tan;
+}
+
+
+
+.social_media img {
+	border: 2px solid white;
+	border-radius: 200px;
+	margin: 30px 10px 0px 10px;
+	text-align: center;
+	width: 90px;
+
+}
+
+.social_media a :hover {
+	margin: 10px 10px 10px 10px;
+	text-align: center; 
+
+}

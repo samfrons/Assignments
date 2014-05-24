@@ -1,200 +1,124 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Quid custodiet ispos ipsums?</title>
+		<link rel="stylesheet" href="styles/style.css"/>
+	</head>
+	<!--
+	Create 3 different web pages exemplifying all of the different layouts we learned in class today:
+	a. Two-column layout, fixed “social media bar” on the left side of the page with a link to Facebook and Twitter
+	b. Three-column layout web page
+	c. An image gallery using floats 
+	-->
 
-<head>
-	<title>Quid custodiet ispos ipsums?</title>
+	<body>
+		<header>
+			<h1> Quid custodiet ispos ipsums? </h1>
+		</header>
+		<div class="container">
 
-	<style>
+			<nav>
+				<a href="http://www.facebook.com">
+				<img src="http://nationalevents.cityofhope.org/images/content/pagebuilder/facebook-icon.png" alt="Facebook"/>
+				</a><br>
+				<a href="http://www.twitter.com">
+				<img src="http://delevo.com/wp-content/uploads/2014/04/twitter-round-icon-256.png" alt="Twitter"/>
+				</a>
+			</nav>
+			<div class="columns">
+				<div class="column1">
+					<h1>Bacon Ipsum</h1>
 
-	div {
-		margin: 0 auto;
-		
-	}
+					<p>
+					Bacon ipsum dolor sit amet flank pork loin tenderloin swine sirloin, pig salami t-bone chuck prosciutto. Cow chuck fatback, pastrami meatloaf hamburger beef ribs jowl. Turducken meatball pig leberkas porchetta pork sausage ribeye short ribs. Short ribs spare ribs shank pastrami leberkas sirloin chuck ground round brisket tongue ham hock.
+					<br><br></p>
 
-	.column1 {
-		float: left;
-		max-width: 450px;
-		background-color: #70363D;
-		margin: 10px 10px 10px 75px;
-		padding: 0 15px 0 15px;
-		border-radius: 50px 0 0 50px;
+					<p>
+					Ribeye beef short ribs bresaola beef ribs. Prosciutto filet mignon spare ribs flank capicola ribeye porchetta salami short loin fatback beef ham. Biltong pastrami shank bresaola capicola, corned beef andouille beef ribs pork chop boudin ball tip. Brisket sausage turducken meatball boudin pork belly.
+					<br><br></p>
 
+					<img src="http://s3.amazonaws.com/theoatmeal-img/comics/bacon_love/4.png" alt="bacon love"/>
 
+					<p>
+					Capicola turkey pork belly ham doner short loin. Capicola corned beef shoulder prosciutto tenderloin sausage t-bone tri-tip. Pig ribeye flank, tenderloin frankfurter swine shank sirloin pancetta rump ham hock boudin meatball. Short loin fatback pancetta pork belly corned beef, sausage t-bone pig ham hock.
+					<br><br></p>
 
-	}
+					<p>
+					Ham hock short loin pork belly ball tip, bresaola ground round doner salami. Spare ribs pork chop drumstick beef ribs t-bone tail porchetta doner strip steak capicola ham hock. Chuck sirloin andouille tenderloin. Pork rump filet mignon, leberkas corned beef shoulder sausage shank andouille shankle boudin tail turkey. Kevin swine corned beef sausage.
+					<br><br></p>
 
-	.column2 {
-		float: left;
-		background-color: #B03846;
-		max-width: 450px;
-		margin: 10px;
-		padding: 0 15px 0 15px;
-		border-radius: 0 50px 50px 0;
+					<p>
+					Filet mignon shoulder rump t-bone. Rump filet mignon short ribs tri-tip turkey, tenderloin pork belly andouille pork chop ball tip shoulder. Pig bacon landjaeger, filet mignon beef pork chop ball tip pork belly leberkas boudin kielbasa short loin brisket doner pork loin. Ball tip tail filet mignon, short loin jerky pancetta hamburger chicken bresaola pork belly pork loin strip steak. Salami pork chop pastrami meatball flank jowl.
+					<br><br></p>
 
-	}
+					<p>
+					Bacon ipsum dolor sit amet flank pork loin tenderloin swine sirloin, pig salami t-bone chuck prosciutto. Cow chuck fatback, pastrami meatloaf hamburger beef ribs jowl. Turducken meatball pig leberkas porchetta pork sausage ribeye short ribs. Short ribs spare ribs shank pastrami leberkas sirloin chuck ground round brisket tongue ham hock.
+					<br><br></p>
 
+					<p>
+					Ribeye beef short ribs bresaola beef ribs. Prosciutto filet mignon spare ribs flank capicola ribeye porchetta salami short loin fatback beef ham. Biltong pastrami shank bresaola capicola, corned beef andouille beef ribs pork chop boudin ball tip. Brisket sausage turducken meatball boudin pork belly.
+					<br><br></p>
 
+					<p>
+					Capicola turkey pork belly ham doner short loin. Capicola corned beef shoulder prosciutto tenderloin sausage t-bone tri-tip. Pig ribeye flank, tenderloin frankfurter swine shank sirloin pancetta rump ham hock boudin meatball. Short loin fatback pancetta pork belly corned beef, sausage t-bone pig ham hock.
+					<br><br></p>
 
-	#navbar {
-		position: fixed;
-		left: 1%;
-		float: left;
-		background-color: #C9DCF0;
-		border-radius: 20px;
-		top: 50%;
-		margin-right: 10px;
+					<p>
+					Ham hock short loin pork belly ball tip, bresaola ground round doner salami. Spare ribs pork chop drumstick beef ribs t-bone tail porchetta doner strip steak capicola ham hock. Chuck sirloin andouille tenderloin. Pork rump filet mignon, leberkas corned beef shoulder sausage shank andouille shankle boudin tail turkey. Kevin swine corned beef sausage.
+					<br><br></p>
 
-	}
-		
-		#navbar img {
-			width: 50px;
-			margin: 15px 10px 15px 10px ;
+					<p>
+					Filet mignon shoulder rump t-bone. Rump filet mignon short ribs tri-tip turkey, tenderloin pork belly andouille pork chop ball tip shoulder. Pig bacon landjaeger, filet mignon beef pork chop ball tip pork belly leberkas boudin kielbasa short loin brisket doner pork loin. Ball tip tail filet mignon, short loin jerky pancetta hamburger chicken bresaola pork belly pork loin strip steak. Salami pork chop pastrami meatball flank jowl.
+					<br><br></p>
+				</div>
 
-		}
+				<div class="column2">
 
-	p {
-		padding: 0 20px 0 20px;
-	}
+					<h1>Tuna Ipsum</h1>
 
-	h1 {
-		text-align: center;
-		font-family: helvetica;
-	}
+					<p>
+					Tuna ipsum daggertooth pike conger Atlantic herring velvetfish jewfish crocodile shark pikehead, New Zealand smelt taimen flatfish hammerhead shark. Splitfin sailback scorpionfish squaretail blacktip reef shark squaretail gulf menhaden blue eye temperate perch cookie-cutter shark striped burrfish. Pelagic cod; galjoen fish longfin smelt 
+					<br><br></p>
 
-	#heading {
-		font-family: helvetica;
-		background-color: #DEA9AF;
-		border-radius: 0 0 20px 20px;
+					<p>
+					Grouper three spot gourami, "cutthroat eel skipping goby Black scabbardfish." Spanish mackerel frilled shark worm eel bocaccio sábalo, "smalleye squaretail spiny basslet neon tetra, tench." Redmouth whalefish treefish yellowtail amberjack naked-back knifefish Blobfish spotted danio bonytail chub kelpfish fire bar danio scythe 
+					<br><br></p>
 
-	}
+					<img src="http://www.toonpool.com/user/997/files/surprise_tuna_waiter_863075.jpg" alt="tuna surprise"/>
 
-	img {
-		width: 300px;
-		float: left;
-		margin: 10px 15px 5px 20px;
-	}
+					<p>
+					butterfish banded killifish. Sevan trout weever, rock bass tonguefish snailfish, "yellow bass elasmobranch roanoke bass." Cod icefish Australian prowfish silver hake; zingel great white shark scaleless black dragonfish boafish barracudina, mud cat. Walu pencilsmelt: houndshark pencilsmelt Mexican golden trout hairtail. 
+					<br><br></p>
 
-	</style>
-</head>
-<!-- 
-Create 3 different web pages exemplifying all of the different layouts we learned in class today:
-a. Two-column layout, fixed “social media bar” on the left side of the page with a link to Facebook and Twitter
-b. Three-column layout web page
-c. An image gallery using floats 
--->
+					<p>
+					Bramble shark pike eel crocodile icefish dragonfish, arapaima Mexican golden trout. Yellow weaver, beaked sandfish drum vimba sea snail cardinalfish sand tiger sand eel jewel tetra ilisha tommy ruff? Lizardfish; clownfish tilefish southern smelt triplefin blenny algae eater. Temperate ocean-bass kappy wels catfish longnose dace splitfin 
+					<br><br></p>
 
-<body>
-	<div id="heading">
-		<h1> Quid custodiet ispos ipsums? </h1>
-	</div>
-	<div id="navbar">
-		<a href="http://www.facebook.com"><img src="http://nationalevents.cityofhope.org/images/content/pagebuilder/facebook-icon.png" alt="Facebook"/></a><br>
-		<a href="http://www.twitter.com"><img src="http://delevo.com/wp-content/uploads/2014/04/twitter-round-icon-256.png" alt="Twitter"/></a>
+					<p>
+					Noodlefish. Yellow-edged moray croaker regal whiptail catfish Pacific albacore jewelfish tripod fish peladillo trout tommy ruff redside char.Splitfin Japanese eel freshwater hatchetfish. Nurse shark boxfish sarcastic fringehead white shark: Arctic char codlet bristlenose catfish. Tubeblenny zebra tilapia Atlantic silverside: upside-down catfish tapetail. 
+					<br><br></p>
 
-	</div>
+					<p>
+					Tuna ipsum daggertooth pike conger Atlantic herring velvetfish jewfish crocodile shark pikehead, New Zealand smelt taimen flatfish hammerhead shark. Splitfin sailback scorpionfish squaretail blacktip reef shark squaretail gulf menhaden blue eye temperate perch cookie-cutter shark striped burrfish. Pelagic cod; galjoen fish longfin smelt 
+					<br><br></p>
 
-	<div class="column1">
-		
-			<h1>Bacon Ipsum</h1>
+					<p>
+					Grouper three spot gourami, "cutthroat eel skipping goby Black scabbardfish." Spanish mackerel frilled shark worm eel bocaccio sábalo, "smalleye squaretail spiny basslet neon tetra, tench." Redmouth whalefish treefish yellowtail amberjack naked-back knifefish Blobfish spotted danio bonytail chub kelpfish fire bar danio scythe 
+					<br><br></p>
 
+					<p>
+					butterfish banded killifish. Sevan trout weever, rock bass tonguefish snailfish, "yellow bass elasmobranch roanoke bass." Cod icefish Australian prowfish silver hake; zingel great white shark scaleless black dragonfish boafish barracudina, mud cat. Walu pencilsmelt: houndshark pencilsmelt Mexican golden trout hairtail. 
+					<br><br></p>
 
+					<p>
+					Bramble shark pike eel crocodile icefish dragonfish, arapaima Mexican golden trout. Yellow weaver, beaked sandfish drum vimba sea snail cardinalfish sand tiger sand eel jewel tetra ilisha tommy ruff? Lizardfish; clownfish tilefish southern smelt triplefin blenny algae eater. Temperate ocean-bass kappy wels catfish longnose dace splitfin 
+					<br><br></p>
 
-			<p>
-			Bacon ipsum dolor sit amet flank pork loin tenderloin swine sirloin, pig salami t-bone chuck prosciutto. Cow chuck fatback, pastrami meatloaf hamburger beef ribs jowl. Turducken meatball pig leberkas porchetta pork sausage ribeye short ribs. Short ribs spare ribs shank pastrami leberkas sirloin chuck ground round brisket tongue ham hock.
-			<br><br></p>
-
-			<p>
-			Ribeye beef short ribs bresaola beef ribs. Prosciutto filet mignon spare ribs flank capicola ribeye porchetta salami short loin fatback beef ham. Biltong pastrami shank bresaola capicola, corned beef andouille beef ribs pork chop boudin ball tip. Brisket sausage turducken meatball boudin pork belly.
-			<br><br></p>
-
-			<img src="http://s3.amazonaws.com/theoatmeal-img/comics/bacon_love/4.png" alt="bacon love"/>
-
-			<p>
-			Capicola turkey pork belly ham doner short loin. Capicola corned beef shoulder prosciutto tenderloin sausage t-bone tri-tip. Pig ribeye flank, tenderloin frankfurter swine shank sirloin pancetta rump ham hock boudin meatball. Short loin fatback pancetta pork belly corned beef, sausage t-bone pig ham hock.
-			<br><br></p>
-
-			<p>
-			Ham hock short loin pork belly ball tip, bresaola ground round doner salami. Spare ribs pork chop drumstick beef ribs t-bone tail porchetta doner strip steak capicola ham hock. Chuck sirloin andouille tenderloin. Pork rump filet mignon, leberkas corned beef shoulder sausage shank andouille shankle boudin tail turkey. Kevin swine corned beef sausage.
-			<br><br></p>
-
-			<p>
-			Filet mignon shoulder rump t-bone. Rump filet mignon short ribs tri-tip turkey, tenderloin pork belly andouille pork chop ball tip shoulder. Pig bacon landjaeger, filet mignon beef pork chop ball tip pork belly leberkas boudin kielbasa short loin brisket doner pork loin. Ball tip tail filet mignon, short loin jerky pancetta hamburger chicken bresaola pork belly pork loin strip steak. Salami pork chop pastrami meatball flank jowl.
-			<br><br></p>
-
-			<p>
-			Bacon ipsum dolor sit amet flank pork loin tenderloin swine sirloin, pig salami t-bone chuck prosciutto. Cow chuck fatback, pastrami meatloaf hamburger beef ribs jowl. Turducken meatball pig leberkas porchetta pork sausage ribeye short ribs. Short ribs spare ribs shank pastrami leberkas sirloin chuck ground round brisket tongue ham hock.
-			<br><br></p>
-
-			<p>
-			Ribeye beef short ribs bresaola beef ribs. Prosciutto filet mignon spare ribs flank capicola ribeye porchetta salami short loin fatback beef ham. Biltong pastrami shank bresaola capicola, corned beef andouille beef ribs pork chop boudin ball tip. Brisket sausage turducken meatball boudin pork belly.
-			<br><br></p>
-
-			<p>
-			Capicola turkey pork belly ham doner short loin. Capicola corned beef shoulder prosciutto tenderloin sausage t-bone tri-tip. Pig ribeye flank, tenderloin frankfurter swine shank sirloin pancetta rump ham hock boudin meatball. Short loin fatback pancetta pork belly corned beef, sausage t-bone pig ham hock.
-			<br><br></p>
-
-			<p>
-			Ham hock short loin pork belly ball tip, bresaola ground round doner salami. Spare ribs pork chop drumstick beef ribs t-bone tail porchetta doner strip steak capicola ham hock. Chuck sirloin andouille tenderloin. Pork rump filet mignon, leberkas corned beef shoulder sausage shank andouille shankle boudin tail turkey. Kevin swine corned beef sausage.
-			<br><br></p>
-
-			<p>
-			Filet mignon shoulder rump t-bone. Rump filet mignon short ribs tri-tip turkey, tenderloin pork belly andouille pork chop ball tip shoulder. Pig bacon landjaeger, filet mignon beef pork chop ball tip pork belly leberkas boudin kielbasa short loin brisket doner pork loin. Ball tip tail filet mignon, short loin jerky pancetta hamburger chicken bresaola pork belly pork loin strip steak. Salami pork chop pastrami meatball flank jowl.
-			<br><br></p>
-
-	</div>
-
-	<div class="column2">
-
-		<h1>Tuna Ipsum</h1>
-
-
-		<p>
-		Tuna ipsum daggertooth pike conger Atlantic herring velvetfish jewfish crocodile shark pikehead, New Zealand smelt taimen flatfish hammerhead shark. Splitfin sailback scorpionfish squaretail blacktip reef shark squaretail gulf menhaden blue eye temperate perch cookie-cutter shark striped burrfish. Pelagic cod; galjoen fish longfin smelt 
-		<br><br></p>
-
-		<p>
-		Grouper three spot gourami, "cutthroat eel skipping goby Black scabbardfish." Spanish mackerel frilled shark worm eel bocaccio sábalo, "smalleye squaretail spiny basslet neon tetra, tench." Redmouth whalefish treefish yellowtail amberjack naked-back knifefish Blobfish spotted danio bonytail chub kelpfish fire bar danio scythe 
-		<br><br></p>
-
-		<img src="http://www.toonpool.com/user/997/files/surprise_tuna_waiter_863075.jpg" alt="tuna surprise"/>
-
-		<p>
-		butterfish banded killifish. Sevan trout weever, rock bass tonguefish snailfish, "yellow bass elasmobranch roanoke bass." Cod icefish Australian prowfish silver hake; zingel great white shark scaleless black dragonfish boafish barracudina, mud cat. Walu pencilsmelt: houndshark pencilsmelt Mexican golden trout hairtail. 
-		<br><br></p>
-
-		<p>
-		Bramble shark pike eel crocodile icefish dragonfish, arapaima Mexican golden trout. Yellow weaver, beaked sandfish drum vimba sea snail cardinalfish sand tiger sand eel jewel tetra ilisha tommy ruff? Lizardfish; clownfish tilefish southern smelt triplefin blenny algae eater. Temperate ocean-bass kappy wels catfish longnose dace splitfin 
-		<br><br></p>
-
-		<p>
-		Noodlefish. Yellow-edged moray croaker regal whiptail catfish Pacific albacore jewelfish tripod fish peladillo trout tommy ruff redside char.Splitfin Japanese eel freshwater hatchetfish. Nurse shark boxfish sarcastic fringehead white shark: Arctic char codlet bristlenose catfish. Tubeblenny zebra tilapia Atlantic silverside: upside-down catfish tapetail. 
-		<br><br></p>
-
-		<p>
-		Tuna ipsum daggertooth pike conger Atlantic herring velvetfish jewfish crocodile shark pikehead, New Zealand smelt taimen flatfish hammerhead shark. Splitfin sailback scorpionfish squaretail blacktip reef shark squaretail gulf menhaden blue eye temperate perch cookie-cutter shark striped burrfish. Pelagic cod; galjoen fish longfin smelt 
-		<br><br></p>
-
-		<p>
-		Grouper three spot gourami, "cutthroat eel skipping goby Black scabbardfish." Spanish mackerel frilled shark worm eel bocaccio sábalo, "smalleye squaretail spiny basslet neon tetra, tench." Redmouth whalefish treefish yellowtail amberjack naked-back knifefish Blobfish spotted danio bonytail chub kelpfish fire bar danio scythe 
-		<br><br></p>
-
-		<p>
-		butterfish banded killifish. Sevan trout weever, rock bass tonguefish snailfish, "yellow bass elasmobranch roanoke bass." Cod icefish Australian prowfish silver hake; zingel great white shark scaleless black dragonfish boafish barracudina, mud cat. Walu pencilsmelt: houndshark pencilsmelt Mexican golden trout hairtail. 
-		<br><br></p>
-
-		<p>
-		Bramble shark pike eel crocodile icefish dragonfish, arapaima Mexican golden trout. Yellow weaver, beaked sandfish drum vimba sea snail cardinalfish sand tiger sand eel jewel tetra ilisha tommy ruff? Lizardfish; clownfish tilefish southern smelt triplefin blenny algae eater. Temperate ocean-bass kappy wels catfish longnose dace splitfin 
-		<br><br></p>
-
-		<p>
-		Noodlefish. Yellow-edged moray croaker regal whiptail catfish Pacific albacore jewelfish tripod fish peladillo trout tommy ruff redside char.Splitfin Japanese eel freshwater hatchetfish. Nurse shark boxfish sarcastic fringehead white shark: Arctic char codlet bristlenose. 
-		<br><br></p>
-
-
-	</div>
-
-	
-
-</body>
-
+					<p>
+					Noodlefish. Yellow-edged moray croaker regal whiptail catfish Pacific albacore jewelfish tripod fish peladillo trout tommy ruff redside char.Splitfin Japanese eel freshwater hatchetfish. Nurse shark boxfish sarcastic fringehead white shark: Arctic char codlet bristlenose. 
+					<br><br></p>
+				</div>
+			</div>
+		</div> <!-- container end -->
+	</body>
 </html>

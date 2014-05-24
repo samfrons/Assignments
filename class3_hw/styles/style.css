@@ -1,0 +1,148 @@
+/* 2 column a page */
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 900px;
+}
+/* i made a container for the columns so they center in the page and scale */
+
+.columns > div {
+	width: 40%;
+	min-width: 360px;
+	max-width: 450px;
+	padding: 0 15px 0 15px;
+	margin: 10px;
+	float: left;
+	min-height: 2200px;
+}
+/* the > means that these styles only apple to div tags that are direct children of the .column class. for example, a div within a div in the column would not take these styles, just a div inside .columns */
+/* the min-width ensures that on a small screen size, they don't maintain only 45% of the screen size but take up at least 360px */
+/* i consolidated the styles that both columns shared and put them in one. unique column styles found below so it takes out style repetition */
+/* the min-height is if you wanted the bottom to align with each column. without this, the right column with less copy cuts off */
+.columns img {
+	width: 255px;
+}
+
+.column1 {
+	background-color: #70363D;
+	border-radius: 50px 0 0 50px;
+}
+
+.column2 {
+	background-color: #B03846;
+	border-radius: 0 50px 50px 0;
+}
+
+nav {
+	position: fixed;
+	left: 1%;
+	float: left;
+	background-color: #C9DCF0;
+	border-radius: 20px;
+	top: 50%;
+	margin-right: 10px;
+}
+
+nav img {
+	width: 50px;
+	margin: 15px 10px 15px 10px;
+}
+
+p {
+	padding: 0 20px 0 20px;
+}
+
+h1 {
+	text-align: center;
+	font-family: helvetica;
+}
+
+header {
+	font-family: helvetica;
+	background-color: #DEA9AF;
+	border-radius: 0 0 20px 20px;
+}
+
+img {
+	width: 300px;
+	float: left;
+	margin: 10px 15px 5px 20px;
+}
+
+
+/* 3 column c page */
+
+body {
+	text-align: justify;
+	font-family: helvetica;
+}
+	
+.container > .column {
+	width: 28%;
+	min-width: 260px;
+}
+/* adding a percentage width and min-width makes sure they scale then don't scale too much when the screen gets too small */
+
+.column {
+	max-width: 290px;
+	float: left;
+	background-color: #E2F0D1;
+	margin: 10px;
+	padding: 10px;
+}
+
+h1:hover {
+	cursor: pointer;
+	transition: .5s all ease;
+}
+/* cursor: pointer is a nice setting for hover states */
+/* that's transition. but if you want to use this, make sure you go to http://prefixmycss.com before you put it live */
+
+#gangsta_ipsum h1:hover {
+	margin: 10px;
+}
+
+#postmodern_ipsum h1:hover {
+	font-family: times;
+}
+
+#cat_ipsum h1:hover {
+	color: brown;
+}
+
+
+/* image gallery c page */ 
+
+body {
+	text-align: center;
+	/* why wont the #main section align center?? */
+}
+
+img {
+	max-width: 280px;
+	width: 33%;
+	display: block;
+	margin: 10px;
+	min-width: 280px;
+}
+
+.gallery {
+	float: left;
+}
+
+#main {
+	text-align: center;
+	/* why wont the #main section align center?? */
+	background-color: grey;
+	margin: 0 auto;
+	max-width: 900px;
+	width: 100%;
+	background: red;
+	overflow: auto;
+}
+/* because you need to set a width and add margin: 0 auto; !! text-align: center is just for text alignment. :) */
+/* now is it centered, but your images widths make it look like it isn't.*/
+/* overflow: auto allows the parent container of floated elements to have a height. without it you won't see the background. try taking out overflow: auto and see what happens. */
+/* with a max-width of 900px for the gallery, each image can't be more than 280px because they have left + right margins of 20px each= 60px. 60 + (280 x 3) = 900. so then you will see a full grid */
+
